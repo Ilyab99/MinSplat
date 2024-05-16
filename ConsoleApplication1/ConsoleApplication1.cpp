@@ -63,7 +63,7 @@ int main(int argc, char** argv){
 
 	file_browser->load("folder");
 	w->resizable(w);
-
+//doghouse
 	file_browser->type(FL_HOLD_BROWSER);
 	file_browser->filetype(Fl_File_Browser::FILES);
 	file_browser->filter("*.*");
