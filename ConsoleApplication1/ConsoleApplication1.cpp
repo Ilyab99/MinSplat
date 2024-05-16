@@ -54,16 +54,15 @@ void whenPushed3(Fl_Widget*, void*)
 int main(int argc, char** argv){
 	soloud.init();
 	std::cout << Fl::event_text();
-	Fl_Window* w = new Fl_Window(180, 260);
+	Fl_Window* w = new Fl_Window(180, 260,200,400,"MinSplat");
 	Fl_Button* button = new Fl_Button(10, 20, 90, 20, "Play Song");
 	Fl_Button* button2 = new Fl_Button(10, 40, 90, 20, "Pause");
 	Fl_Button* button3 = new Fl_Button(10, 60, 90, 20, "Resume");
 	Fl_File_Browser* file_browser = new Fl_File_Browser { 10, 120, 200, 200 };
 	Fl_Box* box1 = new Fl_Box{ 100, 80, 90, 20, ""};
-
 	file_browser->load("folder");
 	w->resizable(w);
-//doghouse
+	//
 	file_browser->type(FL_HOLD_BROWSER);
 	file_browser->filetype(Fl_File_Browser::FILES);
 	file_browser->filter("*.*");
