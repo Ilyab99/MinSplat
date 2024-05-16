@@ -62,6 +62,7 @@ int main(int argc, char** argv){
 	Fl_Box* box1 = new Fl_Box{ 100, 80, 90, 20, ""};
 
 	file_browser->load("folder");
+	w->resizable(w);
 
 	file_browser->type(FL_HOLD_BROWSER);
 	file_browser->filetype(Fl_File_Browser::FILES);
